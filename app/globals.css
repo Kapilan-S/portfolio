@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+
+    /* Space Mission Theme */
+    --nebula: 250 100% 75%;
+    --star: 60 100% 85%;
+    --galaxy: 220 80% 20%;
+    --cosmic-glow: 200 90% 40%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Fix navbar overlap issue */
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(circle, rgba(var(--nebula), 0.15) 10%, rgba(var(--galaxy), 0.9) 100%);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 4rem;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 4px solid rgba(var(--primary), 0.8);
+  }
+  .circular-gallery {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+  }
+  
+  .circular-gallery:active {
+    cursor: grabbing;
+  }
+} 
