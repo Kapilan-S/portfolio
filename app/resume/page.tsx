@@ -31,7 +31,7 @@ export default function ResumePage() {
                 <h2 className="text-xl text-muted-foreground mt-1">Software Developer | Expertise in Office Tools</h2>
               </div>
               <Button className="mt-4 md:mt-0" variant="outline" asChild>
-  <a href="https://drive.google.com/file/d/1tSnSZn857UqLuVJHvhOAzMbBxgnWR6dB/view?usp=sharing" download="KAPILAN_ATS_RESUME.pdf">
+  <a href="https://drive.google.com/file/d/1tSnSZn857UqLuVJHvhOAzMbBxgnWR6dB/view?usp=sharing" download="KAPILAN ATS RESUME.pdf">
     <Download className="mr-2 h-4 w-4" />
     Download Resume
   </a>
